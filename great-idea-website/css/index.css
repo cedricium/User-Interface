@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,39 +12,39 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
@@ -64,3 +64,85 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+.container {
+  margin: 2rem 8rem 6rem;
+}
+
+header nav {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+
+header nav a:nth-of-type(-n+6) {
+  display: inline-block;
+  font-size: 1.15rem;
+  color: lightgrey;
+  text-decoration: none;
+  margin-right: 8%;
+  vertical-align: top;
+}
+
+section {
+  margin: 4rem 0;
+}
+
+section.landing .cols {
+  width: 100%;
+  text-align: center;
+}
+
+section.landing .cols .col {
+  display: inline-block;
+  width: 48%;
+}
+
+section.landing .title {
+  font-size: 6rem;
+  text-align: center;
+}
+
+section.landing .cta {
+  font-size: 1.15rem;
+  border: solid 2px black;
+  padding: 0.5rem 3rem;
+}
+
+section .component.half {
+  display: inline-block;
+  width: 45%;
+}
+
+section .component.half:nth-child(1) {
+  margin-right: 5%;
+}
+
+section .component.third {
+  display: inline-block;
+  width: 30%;
+}
+
+section .component.third:nth-child(n) {
+  margin-right: 1%;
+}
+
+section .component .heading {
+  font-size: 1.5rem;
+}
+
+section .component .body {
+  line-height: 1.25;
+}
+
+div.banner {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+div.banner .middle-img {
+  min-width: 100%;
+}
+
+footer {
+  text-align: center;
+}
